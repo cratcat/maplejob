@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>픽셀 히어로즈: 상어 보스</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <header><div><span class="eyebrow">2.5D SIDE-SCROLL ACTION</span><h1>픽셀 히어로즈 <em>:</em> 상어 보스</h1><p>네 명의 엉뚱한 영웅과 함께 몬스터를 물리쳐라!</p></div><button id="restart">↻ 다시 시작</button></header>
+  <section class="hud">
+    <div class="hero-panel"><div class="hero-name" id="heroName">칼통</div><div class="bar"><i id="hpBar"></i></div><small>HP <b id="hpText">100 / 100</b></small></div>
+    <div class="stat"><span>🪙 GOLD</span><b id="gold">0</b></div><div class="stat"><span>🎒 ITEM</span><b id="items">0</b></div><div class="stat"><span>⚔️ 처치</span><b id="kills">0</b></div>
+    <div class="boss-hud" id="bossHud"><span>🦈 아기 상어</span><div class="bar"><i id="bossBar"></i></div></div>
+  </section>
+  <div class="game-wrap"><canvas id="game" width="1280" height="620" aria-label="횡스크롤 액션 게임"></canvas>
+    <div class="overlay" id="overlay"><div class="card"><span class="eyebrow">READY, HERO?</span><h2>모험을 시작할까?</h2><p>몹을 잡아 골드와 아이템을 모으고, 마지막에 아기 상어 보스를 쓰러뜨리세요.</p><button id="start">게임 시작</button></div></div>
+    <div class="toast" id="toast"></div>
+  </div>
+  <footer><div class="controls"><span><kbd>A</kbd><kbd>D</kbd> 이동</span><span><kbd>W</kbd><kbd>S</kbd> 깊이 이동</span><span><kbd>J</kbd> 공격</span><span><kbd>K</kbd> 특수 공격</span><span><kbd>1</kbd>–<kbd>4</kbd> 영웅 변경</span><span><kbd>Space</kbd> 점프</span></div><p>GitHub Pages용 · 외부 라이브러리/이미지 호출 없이 실행</p></footer>
+</div>
+<script src="game.js"></script>
+</body></html>
